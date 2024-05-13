@@ -1,7 +1,7 @@
 
 @charset "UTF-8";
 
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -13,9 +13,39 @@ html, body{
     background-color: black; 
 }
 
+body{
+    background: url("../img/fundo.png") no-repeat top center/cover fixed;
+
+}
+
 main{
 
     height: 100vh;
     position: relative;
-    background-color: green;
+    
+}
+
+
+
+section#telefone{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    height: 500px;
+    width: 250px;
+
+    background: black url(../img/frame_iphone.png)
+      no-repeat;
+    border-radius: 40px;
+}
+
+iframe#tela{
+    height: 452px;
+    width: 220px;
+    position: relative;
+    top: 32px;
+    left: 16px;
+    border-radius: 5px 5px 30px 30px;
 }
